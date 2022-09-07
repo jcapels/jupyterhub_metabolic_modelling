@@ -1,5 +1,5 @@
 
-HOME_DIR=./s2m2_jupyter
+HOME_DIR=./jupyterhub_metabolic_modelling
 PORT=8000:8000
 
 cd s2m2-environment
