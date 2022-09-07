@@ -12,3 +12,7 @@ Just change the HOME_DIR in the **run_jupyter_hub.sh** for the complete path of 
 ```bash
 sh run_jupyter_hub.sh
 ```
+
+# Create an admin account
+Create an admin account by signing up with the username **admin** and a password of your choice. Log in and start coding
+and managing the jupyterhub in your server.
