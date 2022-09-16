@@ -111,11 +111,11 @@ RUN pip install tornado
 
 USER root
 
-#COPY ./cplex/ /home/cplex/
-#COPY ./etfl /home/etfl/
-#RUN python /home/cplex/python/setup.py install
-#RUN cd /home/etfl/ && python setup.py install
-#RUN cd ../../
+COPY ./cplex/ /home/cplex/
+COPY ./etfl /home/etfl/
+RUN python /home/cplex/python/setup.py install
+RUN cd /home/etfl/ && python setup.py install
+RUN cd ../../
 USER $NB_USER
 # Reinstall an older version of tornado as tornado 5 doesn't work
 # with the current version of jupyterhub
