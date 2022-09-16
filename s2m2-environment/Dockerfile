@@ -109,6 +109,7 @@ RUN pip install jupyterhub-tmpauthenticator
 
 # <---------- to here ------------>
 
+# Install all dependencies related to metabolic modelling from here 
 COPY ./requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
 RUN pip install tornado
@@ -120,6 +121,9 @@ COPY ./etfl /home/etfl/
 RUN python /home/cplex/python/setup.py install
 RUN cd /home/etfl/ && python setup.py install
 RUN cd ../../
+# To here
+
+
 USER $NB_USER
 # Reinstall an older version of tornado as tornado 5 doesn't work
 # with the current version of jupyterhub
