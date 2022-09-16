@@ -3,7 +3,10 @@ A jupyter hub instance for metabolic modelling using mewpy, troppo, cobra, etfl 
 
 # Requirements
 - Docker
-- etfl and cplex folders should be pasted here in this folder
+- etfl and cplex folders should be pasted here in the root folder (the one with this project)
+
+# Docker image for the cplex_mewpy environment 
+You can find the Dockerfile for this image in the s2m2-environment folder
 
 # RUN
 
