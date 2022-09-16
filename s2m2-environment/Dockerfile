@@ -10,7 +10,9 @@
 # Start from ubuntu :-)
 FROM ubuntu@sha256:84c334414e2bfdcae99509a6add166bbb4fa4041dc3fa6af08046a66fed3005f
 
-LABEL maintainer="Christopher Woods <Christopher.Woods@bristol.ac.uk>"
+LABEL maintainer="João Capela <joao.capela@ceb.uminho.pt>"
+
+# <----- credits to Christopher Woods <Christopher.Woods@bristol.ac.uk> from here ------>
 
 USER root
 
@@ -104,6 +106,8 @@ RUN conda config --system --prepend channels conda-forge && \
 # Now installed tmpauthenticator. This is a module that allows anybody
 # to log into this jupyterhub using a hidden URL
 RUN pip install jupyterhub-tmpauthenticator
+
+# <---------- to here ------------>
 
 COPY ./requirements.txt /home/requirements.txt
 RUN pip install -r /home/requirements.txt
