@@ -6,7 +6,11 @@ A jupyter hub instance for metabolic modelling using mewpy, troppo, cobra, etfl 
 - etfl and cplex folders should be pasted here in the root folder (the one with this project)
 
 # Docker image for the cplex_mewpy environment 
+
 You can find the Dockerfile for this image in the s2m2-environment folder
+
+The ETFL repository should be downloaded from https://github.com/EPFL-LCSB/etfl.git .
+CPLEX should be downloaded and added to the this project directly. Not to any other folder. It is mandatory that the cplex folder should be called "cplex".
 
 # RUN
 
